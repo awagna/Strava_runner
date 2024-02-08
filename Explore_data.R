@@ -12,9 +12,7 @@ app_secret <- "6899acfd77201cc9adfb3cbd989e728cc6169e8e"
 # create the authentication to strava
 stoken = httr::config(token = strava_oauth(app_name, app_client_id,app_secret,app_scope="activity:read_all")) 
 
-
-
-
+# Get info
 myinfo <- get_athlete(stoken, id = "53001950")
 head(myinfo)
 
@@ -52,5 +50,9 @@ gather_distance = function(activity) {
     return(data.frame(distances_metric,elapsed_times,elevation_gain,split_HR))
 }
 
-gather_distance(act_list_IDs[1]) %>% View()
-aa$splits_metric
+gather_distance(act_list_IDs[1])
+
+print("check check")
+
+
+
