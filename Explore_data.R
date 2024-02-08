@@ -53,6 +53,7 @@ gather_distance = function(activity) {
 gather_distance(act_list_IDs[1])
 
 print("check check")
+print("next check")
 
 
 
